@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:shadowColor="@color/black"
+            android:id="@+id/btnbuka"
+            android:layout_width="122dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/btnpgl"
+            android:layout_centerHorizontal="true"
+            android:onClick="buka"
+            android:text="BUKA BROWSER "
+            android:textSize="10dp"
+             />
+
+        <Button
+            android:id="@+id/btnpgl"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="panggil"
+            android:text="TELEPON"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btninfo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btnbuka"
+            android:layout_centerHorizontal="true"
+            android:onClick="tentang"
+            android:text="TENTANG APLIKASI"
+            android:textSize="10sp" />
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="316dp"
+        android:layout_height="118dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="20dp"
+        android:text="Aplikasi masih dalam proses pengembangan"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>
